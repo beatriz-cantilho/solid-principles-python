@@ -27,4 +27,8 @@ if __name__ == '__main__':
 
     print(member.members())
     print(owner.members())
-    print(manager.members()) #It won't work on purpose
+    #print(manager.members()) #It won't work on purpose
+
+
+    print(member.work())
+    print(manager.work())

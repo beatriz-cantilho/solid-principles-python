@@ -1,5 +1,5 @@
-from user import User
-from developer import Developer
+from .user import User
+from .developer import Developer
 
 
 class Owner(User, Developer):

@@ -3,6 +3,7 @@ from good_srp.repo.parser import RepositoryParser
 from good_srp.repo.reports_generator import ReportsGenerator
 from good_srp.repo.reports.html_generator import HTMLGenerator
 from good_srp.repo.reports.markdown_generator import MarkdownGenerator
+from good_srp.repo.reports.writer import ReportWriter
 from good_srp.model_repo.member import Member
 from good_srp.model_repo.manager import Manager
 from good_srp.model_repo.owner import Owner
@@ -15,6 +16,8 @@ if __name__ == '__main__':
         repositories = RepositoryParser.parse(response['body'])
         markdown_report = ReportsGenerator.build(MarkdownGenerator, repositories)
         html_report = ReportsGenerator.build(HTMLGenerator, repositories)
+
+        ReportWriter.write(markdown_report)
 
         print(html_report)
         print(markdown_report)

@@ -20,6 +20,7 @@ This project is a simple Python application designed to help you study and pract
   High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
 ## Project Structure
+```bash
 ├── bad_srp # Bad examples
 │ 
 └── bad_srp.py 
@@ -54,6 +55,7 @@ This project is a simple Python application designed to help you study and pract
 ├── LICENSE 
 ├── README.md 
 └── report.txt 
+```
 
 ## Getting Started
 
